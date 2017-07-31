@@ -1,0 +1,12 @@
+TF: Term Frequency, 衡量一个term在文档中出现得有多频繁。
+IDF: Inverse Document Frequency, 衡量一个term有多重要。
+
+TF(t) = (t出现在文档中的次数) / (文档中的term总数). 
+IDF(t) = log_e(文档总数 / 含有t的文档总数).
+TF-IDF = TF * IDF
+
+一个文档有100个单词，其中单词baby出现了3次。
+那么，TF(baby) = (3/100) = 0.03.
+好，现在我们如果有10M的⽂档， baby出现在其中的1000个⽂档中。
+那么，IDF(baby) = log(10,000,000 / 1,000) = 4
+所以， TF-IDF(baby) = TF(baby) * IDF(baby) = 0.03 * 4 = 0.12

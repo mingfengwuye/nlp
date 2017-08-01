@@ -1,0 +1,21 @@
+自动文摘（Automatic Summarization）的方法主要有两种：Extraction和Abstraction。其中Extraction是抽取式自动文摘方法，通过提取文档中已存在的关键词，句子形成摘要；Abstraction是生成式自动文摘方法，通过建立抽象的语意表示，使用自然语言生成技术，形成摘要。由于生成式自动摘要方法需要复杂的自然语言理解和生成技术支持，应用领域受限。所以本人学习的也是抽取式的自动文摘方法。
+
+目前主要方法有：
+
+基于统计：统计词频，位置等信息，计算句子权值，再简选取权值高的句子作为文摘，特点：简单易用，但对词句的使用大多仅停留在表面信息。
+基于图模型：构建拓扑结构图，对词句进行排序。例如，TextRank/LexRank
+基于潜在语义：使用主题topic模型，挖掘词句隐藏信息。例如，采用LDA，HMM
+基于整数规划：将文摘问题转为整数线性规划，求全局最优解。（～.～我也不懂）
+
+
+TextRank:
+
+http://www.cnblogs.com/chenbjin/p/4600538.html
+https://github.com/letiantian/TextRank4ZH
+https://github.com/davidadamojr/TextRank
+
+LDA/LSI/PLSA
+
+https://radimrehurek.com/gensim/index.html
+https://cs.stanford.edu/~ppasupat/a9online/1140.html
+http://www.52nlp.cn/%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E4%B8%A4%E4%B8%AA%E6%96%87%E6%A1%A3%E7%9A%84%E7%9B%B8%E4%BC%BC%E5%BA%A6%E4%BA%8C

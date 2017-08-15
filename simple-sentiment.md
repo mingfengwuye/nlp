@@ -7,12 +7,10 @@
 
 `for line in open('data/AFINN-111.txt')`
 
-    `word, score = line.split('\t')`
+    word, score = line.split('\t')
     
-    `sentiment_dictionary[word] = int(score)`
+    sentiment_dictionary[word] = int(score)
     
-``
-
 `//Get sentimental score`
 
 `total_score = sum(sentiment_dictionary.get(word, 0) for word in words)`

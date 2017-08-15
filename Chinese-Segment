@@ -1,6 +1,6 @@
-由于英文采用空格进行分词，采用nltk进行token时，需先将中文进行处理。
+#由于英文采用空格进行分词，采用nltk进行token时，需先将中文进行处理。
 
-jieba
+#jieba
 ##############################################################################
 #!/usr/bin/python
 #-- encoding:utf-8 --
@@ -22,14 +22,14 @@ fin.close()
 fout.close()  
 splitSentence('myInput.txt', 'myOutput.txt')
 
-stanford-segmenter
+#stanford-segmenter
 #############################################################################
 Download stanford-segmenter https://nlp.stanford.edu/software/segmenter.shtml
 
 ./segment.sh pku test.simp.utf8 UTF-8 0 > path/to/segmented.file
 
 
-THULAC
+#THULAC
 ##############################################################################
 THULAC（THU Lexical Analyzer for Chinese）由清华大学自然语言处理与社会人文计算实验室研制推出的一套中文词法分析工具包，具有中文分词和词性标注功能。
 https://github.com/thunlp/THULAC
